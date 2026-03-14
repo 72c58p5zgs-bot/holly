@@ -116,7 +116,7 @@ async def send_evening_message():
 
 async def send_daily_quote():
     quote = get_random_quote()
-    await bot.send_message(CHAT_ID, f"📌 Твоя цитата дня:\n\n{quote}")
+    await bot.send_message(CHAT_ID, f"{quote}")
 
 # --- Настройка времени отправки ---
 def setup_scheduler():
