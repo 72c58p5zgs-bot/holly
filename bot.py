@@ -3,6 +3,7 @@ from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.storage.memory import MemoryStorage
+from aiogram.types import Message  # ← ЭТОТ ИМПОРТ БЫЛ НЕ ХВАТАЕТ!
 import asyncio
 import random
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
